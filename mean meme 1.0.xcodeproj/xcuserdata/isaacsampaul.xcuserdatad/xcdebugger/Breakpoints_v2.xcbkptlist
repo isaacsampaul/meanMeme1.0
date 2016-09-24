@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mean meme 1.0/ViewController.swift"
+            timestampString = "496321720.210399"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "imagepicker(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mean meme 1.0/MemeCreatorViewController.swift"
+            timestampString = "496421869.683974"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "memeCreatorViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mean_meme_1_0.memeCreatorViewController.shareButton.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIBarButtonItem&gt;"
+                  moduleName = "mean meme 1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/isaacsampaul/Desktop/swift%20programming/mean%20meme%201.0/mean%20meme%201.0/MemeCreatorViewController.swift"
+                  timestampString = "496421871.085871"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mean_meme_1_0.memeCreatorViewController.shareButton.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIBarButtonItem&gt;"
+                  moduleName = "mean meme 1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/isaacsampaul/Desktop/swift%20programming/mean%20meme%201.0/mean%20meme%201.0/MemeCreatorViewController.swift"
+                  timestampString = "496421871.242286"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mean_meme_1_0.memeCreatorViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; mean_meme_1_0.memeCreatorViewController"
+                  moduleName = "mean meme 1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/isaacsampaul/Desktop/swift%20programming/mean%20meme%201.0/mean%20meme%201.0/MemeCreatorViewController.swift"
+                  timestampString = "496421871.244772"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "412">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mean_meme_1_0.memeCreatorViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;mean_meme_1_0.memeCreatorViewController&gt;"
+                  moduleName = "mean meme 1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/isaacsampaul/Desktop/swift%20programming/mean%20meme%201.0/mean%20meme%201.0/MemeCreatorViewController.swift"
+                  timestampString = "496421871.247171"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "294">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
