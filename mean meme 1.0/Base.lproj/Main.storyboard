@@ -72,6 +72,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                 <connections>
+                                    <action selector="bottomEditorIsEdited:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="5y5-Il-hfd"/>
                                     <action selector="bottomEditorIsFinished:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Oqw-g9-VHt"/>
                                     <action selector="bottomEditorIsUsed:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="opX-XH-Wya"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="vlw-eU-Tu5"/>
