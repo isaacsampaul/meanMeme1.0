@@ -10,13 +10,17 @@ import UIKit
 import Foundation
 
 class memeCreatorViewController: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate ,UITextFieldDelegate{
-    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
+    
     @IBOutlet weak var imageview: UIImageView!
     @IBOutlet weak var topEditor: UITextField!
     @IBOutlet weak var bottomEditor: UITextField!
     @IBOutlet weak var toolBar: UIToolbar!
     @IBOutlet weak var shareButton: UIBarButtonItem!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    var originalFrame: CGFloat = 0
     
     struct meme
     {
@@ -99,28 +103,29 @@ class memeCreatorViewController: UIViewController,UINavigationControllerDelegate
     @IBAction func bottomEditorIsEdited(_ sender: AnyObject)
     {
         unsubscribeFromKeyboardWillShowNotifications()
-        subscribeToKeyboardWillHideNotifications()
-        unsubscribeFromKeyboardWillHideNotifications()
+        
     }
     
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
-       
+        subscribeToKeyboardWillHideNotifications()
         shareButton.isEnabled = true
         textField.resignFirstResponder()
+        unsubscribeFromKeyboardWillHideNotifications()
         return true
     }
     
     
     func generatedMemedImage() -> UIImage
     {
-        
+        navigationBar.isHidden = true
         toolBar.isHidden = true
         UIGraphicsBeginImageContext(self.view.frame.size)
         view.drawHierarchy(in: self.view.frame,afterScreenUpdates: true)
         let memedImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
+        navigationBar.isHidden = false
         toolBar.isHidden = false
         return memedImage
         
@@ -164,12 +169,13 @@ class memeCreatorViewController: UIViewController,UINavigationControllerDelegate
     
     func keyboardWillShow(notification: NSNotification)
     {
+        originalFrame = view.frame.origin.y
         view.frame.origin.y -= getKeyboardHeight(notification: notification)
     }
     
     func keyboardWillHide(notification: NSNotification)
     {
-        view.frame.origin.y += getKeyboardHeight(notification: notification)
+        view.frame.origin.y = originalFrame
     }
     
     func getKeyboardHeight(notification: NSNotification) -> CGFloat {
